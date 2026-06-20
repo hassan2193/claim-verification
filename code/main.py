@@ -87,7 +87,7 @@ def process_row(row, history_df, strategy):
 
 def run(input_csv, output_csv, strategy, limit=None):
     df = pd.read_csv(input_csv)
-    df = df.iloc[40:44]
+    
     if limit:
         df = df.head(limit)
     history_df = load_history()
